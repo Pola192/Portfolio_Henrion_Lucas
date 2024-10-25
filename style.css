@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 40px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .left-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .toggle-btn {
+    width: 50px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 12px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-btn .orbe {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #000;
+  }
+  
+  /* Mode sombre */
+  .dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+  }
+  
+  .dark-mode header {
+    background-color: #333; 
+  }
+  
+  .dark-mode .nav-links a {
+    color: #f0f0f0; 
+  }
+  
+  .dark-mode .toggle-btn {
+    background-color: #666;
+  }
+  
+  .dark-mode .orbe {
+    transform: translateX(26px);
+  }
+  

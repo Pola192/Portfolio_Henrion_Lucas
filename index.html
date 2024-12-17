@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lucas Henrion</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="left-content">
-      <svg xmlns="profile-1335-svgrepo-com.svg" width="24" height="24" fill="none"></svg>
-      <button class="toggle-btn" id="toggle-dark-mode">
-        <div class="orbe"></div>
-      </button>
-    </div>
-    <nav class="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#contacts">Contacts</a>
-      <a href="#about">À propos</a>
-      <a href="#skills">Compétence</a>
-    </nav>
-  </header>
-  <script>
-    document.getElementById('toggle-dark-mode').addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
+    <header class="header">
+        <div class="header-left">
+            <img src="user-svgrepo-com.svg" alt="Icon" class="icon">
+            <div class="theme-toggle">
+              <div class="orbe"></div>
+            </div>
+          
+        </div>
+        <nav class="header-right">
+            <a href="#accueil">Accueil</a>
+            <a href="#project">Projet</a>
+            <a href="#contact">Contact</a>
+            <a href="#apropos">À propos</a>
+        </nav>
+    </header>
+<main>
+    
+    <h1>Portfolio</h1>
+    <h2>Lucas Henrion</h2>
+    <section class="project">
+      
+
+      <div class="gallerie-contener">
+        <div class="div1"><img class="gallerie-img" src="dunois-lucasPola.png"></img></div>
+        <div class="div2"><img class="gallerie-img" src="dunois-lucasPola.png"></img></div>
+        <div class="div3"><img class="gallerie-img" src="dunois-lucasPola.png"></img></div>
+      </div>
+    </section>
+</main>  
+
+
+<script> themeToggle = document.querySelector('.theme-toggle');
+themeToggle.addEventListener('click', () => {
+    themeToggle.classList.toggle('active');
+});
+</script>
 </body>
 </html>

@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Lucas Henrion</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 <body>
+    <button id="backToTop" title="Revenir en haut">⬆</button>
     <header class="header">
         <div class="header-left">
             <img src="user-svgrepo-com.svg" alt="Icon" class="icon">
             <div class="theme-toggle">
-              <div class="orbe"></div>
+                <div class="orbe"></div>
             </div>
-          
         </div>
         <nav class="header-right">
             <a href="#accueil">Accueil</a>
@@ -22,26 +23,81 @@
             <a href="#apropos">À propos</a>
         </nav>
     </header>
-<main>
-    
-    <h1>Portfolio</h1>
-    <h2>Lucas Henrion</h2>
-    <section class="project">
-      
-
-      <div class="gallerie-contener">
-        <div class="div1"><img class="gallerie-img" src="dunois-lucasPola.png"></img></div>
-        <div class="div2"><img class="gallerie-img" src="dunois-lucasPola.png"></img></div>
-        <div class="div3"><img class="gallerie-img" src="dunois-lucasPola.png"></img></div>
-      </div>
+    <main>
+        <section id="accueil" class="title">
+            <h1>Portfolio</h1>
+            <h2>Lucas Henrion</h2>
+        </section>
+        <section id="project" class="projet">
+            <div class="gallerie-contener">
+                <div class="div1"><img class="gallerie-img" src="dunois-lucasPola.png" alt="Image 1"></div>
+                <div class="div2"><img class="gallerie-img" src="dunois-lucasPola.png" alt="Image 2"></div>
+                <div class="div3"><img class="gallerie-img" src="dunois-lucasPola.png" alt="Image 3"></div>
+            </div>
+            <div class="text-projet">
+                <h1>Projet</h1>
+                <hr class="under-projet" />
+                <h3>DEMANDE /</h3>
+                <p>Concevoir la première de couverture ainsi que l’édito du programme du théâtre Dunois pour la saison 2021/22 situé à Paris.</p>
+                <h3>CAHIER DES CHARGES /</h3>
+                <p>Choix d’une proposition et réalisation échelle 1 sur une planche A3. Tracé rigoureux, mise en couleur soignée. Précision des lettrages et des éléments textuels sur calque.</p>
+                <h3>UNIVERS DE RÉFÉRENCE /</h3>
+                <p>Affiche du théâtre Dunois</p>
+            </div>
+        </section>
+        <hr class="under-section" />
+        <section id="contact" class="contact">
+            <div class="text-contact">
+                <h1>Contact</h1>
+                <hr class="under-contact" />
+                <h3>DEMANDE /</h3>
+                <p>Concevoir la première de couverture ainsi que l’édito du programme du théâtre Dunois pour la saison 2021/22 situé à Paris.</p>
+                <h3>CAHIER DES CHARGES /</h3>
+                <p>Choix d’une proposition et réalisation échelle 1 sur une planche A3. Tracé rigoureux, mise en couleur soignée. Précision des lettrages et des éléments textuels sur calque.</p>
+                <h3>UNIVERS DE RÉFÉRENCE /</h3>
+                <p>Affiche du théâtre Dunois</p>
+            </div>
+        </section>
+        <hr class="under-section" />
+        <section id="apropos" class="apropos">
+            <div class="text-apropos">
+                <h1>À propos</h1>
+                <hr class="under-apropos" />
+                <h3>DEMANDE /</h3>
+                <p>Concevoir la première de couverture ainsi que l’édito du programme du théâtre Dunois pour la saison 2021/22 situé à Paris.</p>
+                <h3>CAHIER DES CHARGES /</h3>
+                <p>Choix d’une proposition et réalisation échelle 1 sur une planche A3. Tracé rigoureux, mise en couleur soignée. Précision des lettrages et des éléments textuels sur calque.</p>
+                <h3>UNIVERS DE RÉFÉRENCE /</h3>
+                <p>Affiche du théâtre Dunois</p>
+            </div>
+            <div class="photo"><img class="gallerie-img" src="dunois-lucasPola.png" alt="Image"></div>
+        </section>
+    <hr class="under-section" />
+    <section class="competences">
+        <div class="title-competences">
+            <h1>Compétences</h1>
+            <hr class="under-competences" />
+        </div>
+        <div class="liste"> 
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <ul>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+        <div class="icon-contener">
+            <div class="icons"><img src="adobe-photoshop-2.svg" alt=""></div>
+            <div class="icons"><img src="adobe-illustrator-cc-3.svg" alt=""></div>
+            <div class="icons"><img src="adobe-indesign-cc-icon.svg" alt=""></div>
+            <div class="icons"><img src="adobe-xd-2.svg" alt=""></div>
+        </div>
     </section>
-</main>  
-
-
-<script> themeToggle = document.querySelector('.theme-toggle');
-themeToggle.addEventListener('click', () => {
-    themeToggle.classList.toggle('active');
-});
-</script>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
